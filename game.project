@@ -5,12 +5,13 @@ main_collection = /main/main.collectionc
 shared_state = 1
 
 [display]
-width = 960
-height = 640
+width = 700
+height = 800
 
 [android]
 input_method = HiddenInputField
 
 [project]
 title = Men VS Women
+version = 0.1
 
