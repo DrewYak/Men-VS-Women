@@ -1,241 +1,116 @@
 animations {
   id: "WA_ATTACK"
   images {
-    image: "/assets/units/woman-archer/Warrior_03__ATTACK_000.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__ATTACK_000_square_256.png"
   }
   images {
-    image: "/assets/units/woman-archer/Warrior_03__ATTACK_001.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__ATTACK_001_square_256.png"
   }
   images {
-    image: "/assets/units/woman-archer/Warrior_03__ATTACK_002.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__ATTACK_002_square_256.png"
   }
   images {
-    image: "/assets/units/woman-archer/Warrior_03__ATTACK_003.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__ATTACK_003_square_256.png"
   }
   images {
-    image: "/assets/units/woman-archer/Warrior_03__ATTACK_004.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__ATTACK_004_square_256.png"
   }
   images {
-    image: "/assets/units/woman-archer/Warrior_03__ATTACK_005.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__ATTACK_005_square_256.png"
   }
   images {
-    image: "/assets/units/woman-archer/Warrior_03__ATTACK_006.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__ATTACK_006_square_256.png"
   }
   images {
-    image: "/assets/units/woman-archer/Warrior_03__ATTACK_007.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__ATTACK_007_square_256.png"
   }
   images {
-    image: "/assets/units/woman-archer/Warrior_03__ATTACK_008.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__ATTACK_008_square_256.png"
   }
   images {
-    image: "/assets/units/woman-archer/Warrior_03__ATTACK_009.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__ATTACK_009_square_256.png"
   }
   playback: PLAYBACK_LOOP_FORWARD
   fps: 20
-  flip_horizontal: 0
-  flip_vertical: 0
 }
 animations {
   id: "WA_DIE"
-  images {
-    image: "/assets/units/woman-archer/Warrior_03__DIE_000.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/assets/units/woman-archer/Warrior_03__DIE_001.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/assets/units/woman-archer/Warrior_03__DIE_002.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/assets/units/woman-archer/Warrior_03__DIE_003.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/assets/units/woman-archer/Warrior_03__DIE_004.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/assets/units/woman-archer/Warrior_03__DIE_005.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/assets/units/woman-archer/Warrior_03__DIE_006.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/assets/units/woman-archer/Warrior_03__DIE_007.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/assets/units/woman-archer/Warrior_03__DIE_008.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/assets/units/woman-archer/Warrior_03__DIE_009.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
   playback: PLAYBACK_LOOP_FORWARD
   fps: 12
-  flip_horizontal: 0
-  flip_vertical: 0
 }
 animations {
   id: "WA_HURT"
-  images {
-    image: "/assets/units/woman-archer/Warrior_03__HURT_000.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/assets/units/woman-archer/Warrior_03__HURT_001.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/assets/units/woman-archer/Warrior_03__HURT_002.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/assets/units/woman-archer/Warrior_03__HURT_003.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/assets/units/woman-archer/Warrior_03__HURT_004.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/assets/units/woman-archer/Warrior_03__HURT_005.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/assets/units/woman-archer/Warrior_03__HURT_006.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/assets/units/woman-archer/Warrior_03__HURT_007.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/assets/units/woman-archer/Warrior_03__HURT_008.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/assets/units/woman-archer/Warrior_03__HURT_009.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
   playback: PLAYBACK_LOOP_FORWARD
   fps: 16
-  flip_horizontal: 0
-  flip_vertical: 0
 }
 animations {
   id: "WA_IDLE"
   images {
-    image: "/assets/units/woman-archer/Warrior_03__IDLE_000.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__IDLE_000_square_256.png"
   }
   images {
-    image: "/assets/units/woman-archer/Warrior_03__IDLE_001.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__IDLE_001_square_256.png"
   }
   images {
-    image: "/assets/units/woman-archer/Warrior_03__IDLE_002.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__IDLE_002_square_256.png"
   }
   images {
-    image: "/assets/units/woman-archer/Warrior_03__IDLE_003.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__IDLE_003_square_256.png"
   }
   images {
-    image: "/assets/units/woman-archer/Warrior_03__IDLE_004.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__IDLE_004_square_256.png"
   }
   images {
-    image: "/assets/units/woman-archer/Warrior_03__IDLE_005.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__IDLE_005_square_256.png"
   }
   images {
-    image: "/assets/units/woman-archer/Warrior_03__IDLE_006.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__IDLE_006_square_256.png"
   }
   images {
-    image: "/assets/units/woman-archer/Warrior_03__IDLE_007.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__IDLE_007_square_256.png"
   }
   images {
-    image: "/assets/units/woman-archer/Warrior_03__IDLE_008.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__IDLE_008_square_256.png"
   }
   images {
-    image: "/assets/units/woman-archer/Warrior_03__IDLE_009.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__IDLE_009_square_256.png"
   }
   playback: PLAYBACK_LOOP_FORWARD
   fps: 12
-  flip_horizontal: 0
-  flip_vertical: 0
 }
 animations {
   id: "WA_RUN"
   images {
-    image: "/assets/units/woman-archer/Warrior_03__RUN_000.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__RUN_000_square_256.png"
   }
   images {
-    image: "/assets/units/woman-archer/Warrior_03__RUN_001.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__RUN_001_square_256.png"
   }
   images {
-    image: "/assets/units/woman-archer/Warrior_03__RUN_002.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__RUN_002_square_256.png"
   }
   images {
-    image: "/assets/units/woman-archer/Warrior_03__RUN_003.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__RUN_003_square_256.png"
   }
   images {
-    image: "/assets/units/woman-archer/Warrior_03__RUN_004.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__RUN_004_square_256.png"
   }
   images {
-    image: "/assets/units/woman-archer/Warrior_03__RUN_005.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__RUN_005_square_256.png"
   }
   images {
-    image: "/assets/units/woman-archer/Warrior_03__RUN_006.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__RUN_006_square_256.png"
   }
   images {
-    image: "/assets/units/woman-archer/Warrior_03__RUN_007.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__RUN_007_square_256.png"
   }
   images {
-    image: "/assets/units/woman-archer/Warrior_03__RUN_008.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__RUN_008_square_256.png"
   }
   images {
-    image: "/assets/units/woman-archer/Warrior_03__RUN_009.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/units/woman-archer_square_256/Warrior_03__RUN_009_square_256.png"
   }
   playback: PLAYBACK_LOOP_FORWARD
-  fps: 20
-  flip_horizontal: 0
-  flip_vertical: 0
+  fps: 16
 }
-margin: 0
 extrude_borders: 2
-inner_padding: 0
-max_page_width: 0
-max_page_height: 0
-rename_patterns: ""
