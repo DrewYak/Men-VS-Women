@@ -1,0 +1,36 @@
+animations {
+  id: "WP_ATTACK"
+  images {
+    image: "/assets/units/woman-paladin/Warrior_01__ATTACK_000.png"
+  }
+  images {
+    image: "/assets/units/woman-paladin/Warrior_01__ATTACK_001.png"
+  }
+  images {
+    image: "/assets/units/woman-paladin/Warrior_01__ATTACK_002.png"
+  }
+  images {
+    image: "/assets/units/woman-paladin/Warrior_01__ATTACK_003.png"
+  }
+  images {
+    image: "/assets/units/woman-paladin/Warrior_01__ATTACK_004.png"
+  }
+  images {
+    image: "/assets/units/woman-paladin/Warrior_01__ATTACK_005.png"
+  }
+  images {
+    image: "/assets/units/woman-paladin/Warrior_01__ATTACK_006.png"
+  }
+  images {
+    image: "/assets/units/woman-paladin/Warrior_01__ATTACK_007.png"
+  }
+  images {
+    image: "/assets/units/woman-paladin/Warrior_01__ATTACK_008.png"
+  }
+  images {
+    image: "/assets/units/woman-paladin/Warrior_01__ATTACK_009.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 20
+}
+extrude_borders: 2
