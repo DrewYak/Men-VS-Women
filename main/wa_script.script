@@ -10,7 +10,9 @@ function init(self)
 	msg.post("#circle_sprite", "disable")
 
 	self.is_moving = false
-		
+	sprite.play_flipbook("#wa_sprite", "WA_IDLE")
+	--Этот код нуполезен для доступа из других игровых объектов
+	--msg.post("#wa_sprite", "play_animation", { id = hash("WA_IDLE") })	
 	msg.post(".", "acquire_input_focus")
 end
 
@@ -54,17 +56,19 @@ function update(self, dt)
 	local eps = 1
 	local delta_x = math.abs(self.dest_p_x - p.x)
 	local delta_y = math.abs(self.dest_p_y - p.y)
-	if delta_x >= eps then
-		p.x = p.x + SPEED * direction_x * dt
-	elseif delta_x > 0 and delta_x < eps then
-		p.x = self.dest_p_x
-	else
-		if delta_y >= eps then
-			p.y = p.y + SPEED * direction_y * dt
+	if self.is_moving then
+		if delta_x >= eps then
+			p.x = p.x + SPEED * direction_x * dt
+		elseif delta_x > 0 and delta_x < eps then
+			p.x = self.dest_p_x
 		else
-			p.y = self.dest_p_y
-			self.is_moving = false
-			sprite.play_flipbook("#wa_sprite", "WA_IDLE")
+			if delta_y >= eps then
+				p.y = p.y + SPEED * direction_y * dt
+			else
+				p.y = self.dest_p_y
+				self.is_moving = false
+				sprite.play_flipbook("#wa_sprite", "WA_IDLE")
+				end
 		end
 	end
 				
