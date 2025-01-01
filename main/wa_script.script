@@ -4,6 +4,8 @@ function init(self)
 	self.selected = false
 	self.position = go.get_position()
 
+	msg.post("#circle_sprite", "disable")
+
 	msg.post(".", "acquire_input_focus")
 end
 
@@ -13,8 +15,10 @@ function on_input(self, action_id, action)
 		if (math.abs(mouse_x - self.position.x) < CELL_SIZE / 2) and 
 		(math.abs(mouse_y - self.position.y) < CELL_SIZE / 2) then
 			self.selected = true
+			msg.post("#circle_sprite", "enable")
 		else
 			self.selected = false
+			msg.post("#circle_sprite", "disable")
 		end
 	end
 end
