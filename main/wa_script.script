@@ -64,7 +64,7 @@ function update(self, dt)
 		else
 			p.y = self.dest_p_y
 			self.is_moving = false
-			sprite.play_flipbook("#wa_sprite", "WA_IDLE")			
+			sprite.play_flipbook("#wa_sprite", "WA_IDLE")
 		end
 	end
 				

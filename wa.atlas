@@ -35,11 +35,71 @@ animations {
 }
 animations {
   id: "WA_DIE"
+  images {
+    image: "/assets/units/woman-archer_square_256/Warrior_03__DIE_000_square_256.png"
+  }
+  images {
+    image: "/assets/units/woman-archer_square_256/Warrior_03__DIE_001_square_256.png"
+  }
+  images {
+    image: "/assets/units/woman-archer_square_256/Warrior_03__DIE_002_square_256.png"
+  }
+  images {
+    image: "/assets/units/woman-archer_square_256/Warrior_03__DIE_003_square_256.png"
+  }
+  images {
+    image: "/assets/units/woman-archer_square_256/Warrior_03__DIE_004_square_256.png"
+  }
+  images {
+    image: "/assets/units/woman-archer_square_256/Warrior_03__DIE_005_square_256.png"
+  }
+  images {
+    image: "/assets/units/woman-archer_square_256/Warrior_03__DIE_006_square_256.png"
+  }
+  images {
+    image: "/assets/units/woman-archer_square_256/Warrior_03__DIE_007_square_256.png"
+  }
+  images {
+    image: "/assets/units/woman-archer_square_256/Warrior_03__DIE_008_square_256.png"
+  }
+  images {
+    image: "/assets/units/woman-archer_square_256/Warrior_03__DIE_009_square_256.png"
+  }
   playback: PLAYBACK_LOOP_FORWARD
   fps: 12
 }
 animations {
   id: "WA_HURT"
+  images {
+    image: "/assets/units/woman-archer_square_256/Warrior_03__HURT_000_square_256.png"
+  }
+  images {
+    image: "/assets/units/woman-archer_square_256/Warrior_03__HURT_001_square_256.png"
+  }
+  images {
+    image: "/assets/units/woman-archer_square_256/Warrior_03__HURT_002_square_256.png"
+  }
+  images {
+    image: "/assets/units/woman-archer_square_256/Warrior_03__HURT_003_square_256.png"
+  }
+  images {
+    image: "/assets/units/woman-archer_square_256/Warrior_03__HURT_004_square_256.png"
+  }
+  images {
+    image: "/assets/units/woman-archer_square_256/Warrior_03__HURT_005_square_256.png"
+  }
+  images {
+    image: "/assets/units/woman-archer_square_256/Warrior_03__HURT_006_square_256.png"
+  }
+  images {
+    image: "/assets/units/woman-archer_square_256/Warrior_03__HURT_007_square_256.png"
+  }
+  images {
+    image: "/assets/units/woman-archer_square_256/Warrior_03__HURT_008_square_256.png"
+  }
+  images {
+    image: "/assets/units/woman-archer_square_256/Warrior_03__HURT_009_square_256.png"
+  }
   playback: PLAYBACK_LOOP_FORWARD
   fps: 16
 }
@@ -76,7 +136,7 @@ animations {
     image: "/assets/units/woman-archer_square_256/Warrior_03__IDLE_009_square_256.png"
   }
   playback: PLAYBACK_LOOP_FORWARD
-  fps: 12
+  fps: 20
 }
 animations {
   id: "WA_RUN"
@@ -111,6 +171,5 @@ animations {
     image: "/assets/units/woman-archer_square_256/Warrior_03__RUN_009_square_256.png"
   }
   playback: PLAYBACK_LOOP_FORWARD
-  fps: 16
+  fps: 40
 }
-extrude_borders: 2
