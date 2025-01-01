@@ -2,10 +2,11 @@ local CELL_SIZE = 100
 local SPEED = 300
 
 function init(self)
-	self.selected = false
 	local p = go.get_position()
 	self.dest_p_x = p.x
 	self.dest_p_y = p.y
+	self.is_selected = false
+	self.is_moving = false
 		
 	msg.post("#circle_sprite", "disable")
 
@@ -13,19 +14,19 @@ function init(self)
 end
 
 function on_input(self, action_id, action)
-	if action_id == hash("select_character") and action.pressed then
+	if action_id == hash("select_character") and action.pressed and not self.is_moving then
 		local p, mouse_x, mouse_y = go.get_position(), action.x, action.y
 		if (math.abs(mouse_x - p.x) < CELL_SIZE / 2) and 
 		(math.abs(mouse_y - p.y) < CELL_SIZE / 2) then
-			self.selected = true
+			self.is_selected = true
 			msg.post("#circle_sprite", "enable")
 		else
-			self.selected = false
+			self.is_selected = false
 			msg.post("#circle_sprite", "disable")
 		end
 	end
 
-	if self.selected and action_id == hash("move_character") and action.pressed then
+	if self.is_selected and action_id == hash("move_character") and action.pressed then
 		local mouse_x, mouse_y = action.x, action.y
 		-- dtx означает destination tile x
 		-- dty означает destination tile y
@@ -33,9 +34,10 @@ function on_input(self, action_id, action)
 		if dtx >= 0 and dtx <= 7 and dty >= 0 and dty <= 7 then
 			self.dest_p_x = CELL_SIZE / 2 + dtx * 100
 			self.dest_p_y = CELL_SIZE / 2 + dty * 100
+			self.is_moving = true
 		end
 	
-		self.selected = false
+		self.is_selected = false
 		msg.post("#circle_sprite", "disable")
 	end		
 end
@@ -59,6 +61,7 @@ function update(self, dt)
 			p.y = p.y + SPEED * direction_y * dt
 		else
 			p.y = self.dest_p_y
+			self.is_moving = false
 		end
 	end
 				
