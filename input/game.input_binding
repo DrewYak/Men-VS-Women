@@ -2,3 +2,7 @@ mouse_trigger {
   input: MOUSE_BUTTON_LEFT
   action: "select_character"
 }
+mouse_trigger {
+  input: MOUSE_BUTTON_RIGHT
+  action: "move_character"
+}
