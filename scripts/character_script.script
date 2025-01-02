@@ -12,6 +12,7 @@ function init(self)
 	self.is_moving = false
 	sprite.play_flipbook("#character_sprite", "IDLE")
 	msg.post(".", "acquire_input_focus")
+	pprint(go.get_position())
 end
 
 function on_input(self, action_id, action)

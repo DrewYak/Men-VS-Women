@@ -1,5 +1,5 @@
 animations {
-  id: "MA_ATTACK"
+  id: "ATTACK"
   images {
     image: "/assets/images/units/man-archer_square_256/Elf_01__ATTACK_000_square_256.png"
   }
@@ -35,7 +35,7 @@ animations {
   flip_horizontal: 1
 }
 animations {
-  id: "MA_DIE"
+  id: "DIE"
   images {
     image: "/assets/images/units/man-archer_square_256/Elf_01__DIE_000_square_256.png"
   }
@@ -71,7 +71,7 @@ animations {
   flip_horizontal: 1
 }
 animations {
-  id: "MA_HURT"
+  id: "HURT"
   images {
     image: "/assets/images/units/man-archer_square_256/Elf_01__HURT_000_square_256.png"
   }
@@ -107,7 +107,7 @@ animations {
   flip_horizontal: 1
 }
 animations {
-  id: "MA_IDLE"
+  id: "IDLE"
   images {
     image: "/assets/images/units/man-archer_square_256/Elf_01__IDLE_000_square_256.png"
   }
@@ -143,7 +143,7 @@ animations {
   flip_horizontal: 1
 }
 animations {
-  id: "MA_RUN"
+  id: "RUN"
   images {
     image: "/assets/images/units/man-archer_square_256/Elf_01__RUN_000_square_256.png"
   }

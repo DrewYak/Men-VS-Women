@@ -1,5 +1,5 @@
 animations {
-  id: "MP_ATTACK"
+  id: "ATTACK"
   images {
     image: "/assets/images/units/man-paladin_square_256/Elf_02__ATTACK_000_square_256.png"
   }
@@ -35,7 +35,7 @@ animations {
   flip_horizontal: 1
 }
 animations {
-  id: "MP_DIE"
+  id: "DIE"
   images {
     image: "/assets/images/units/man-paladin_square_256/Elf_02__DIE_000_square_256.png"
   }
@@ -71,7 +71,7 @@ animations {
   flip_horizontal: 1
 }
 animations {
-  id: "MP_HURT"
+  id: "HURT"
   images {
     image: "/assets/images/units/man-paladin_square_256/Elf_02__HURT_000_square_256.png"
   }
@@ -107,7 +107,7 @@ animations {
   flip_horizontal: 1
 }
 animations {
-  id: "MP_IDLE"
+  id: "IDLE"
   images {
     image: "/assets/images/units/man-paladin_square_256/Elf_02__IDLE_000_square_256.png"
   }
@@ -143,7 +143,7 @@ animations {
   flip_horizontal: 1
 }
 animations {
-  id: "MP_RUN"
+  id: "RUN"
   images {
     image: "/assets/images/units/man-paladin_square_256/Elf_02__RUN_000_square_256.png"
   }
