@@ -1,5 +1,5 @@
 animations {
-  id: "WW_ATTACK"
+  id: "ATTACK"
   images {
     image: "/assets/images/units/woman-wizard_square_256/Warrior_02__ATTACK_000_square_256.png"
   }
@@ -34,7 +34,7 @@ animations {
   fps: 20
 }
 animations {
-  id: "WW_DIE"
+  id: "DIE"
   images {
     image: "/assets/images/units/woman-wizard_square_256/Warrior_02__DIE_000_square_256.png"
   }
@@ -69,7 +69,7 @@ animations {
   fps: 12
 }
 animations {
-  id: "WW_HURT"
+  id: "HURT"
   images {
     image: "/assets/images/units/woman-wizard_square_256/Warrior_02__HURT_000_square_256.png"
   }
@@ -104,7 +104,7 @@ animations {
   fps: 16
 }
 animations {
-  id: "WW_IDLE"
+  id: "IDLE"
   images {
     image: "/assets/images/units/woman-wizard_square_256/Warrior_02__IDLE_000_square_256.png"
   }
@@ -139,7 +139,7 @@ animations {
   fps: 20
 }
 animations {
-  id: "WW_RUN"
+  id: "RUN"
   images {
     image: "/assets/images/units/woman-wizard_square_256/Warrior_02__RUN_000_square_256.png"
   }
