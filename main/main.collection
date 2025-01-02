@@ -1,7 +1,7 @@
 name: "main"
 scale_along_z: 0
 embedded_instances {
-  id: "map"
+  id: "board"
   data: "components {\n"
   "  id: \"field\"\n"
   "  component: \"/field.tilemap\"\n"

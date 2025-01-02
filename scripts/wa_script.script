@@ -1,7 +1,28 @@
 local CELL_SIZE = 100
 local SPEED = 300
 
+local SPRITE_NAME		= ""
+local ATTACK_ANIM_NAME 	= ""
+local DIE_ANIM_NAME 	= ""
+local HURT_ANIM_NAME 	= ""
+local IDLE_ANIM_NAME 	= ""
+local RUN_ANIM_NAME 	= ""
+
 function init(self)
+	--Получаем имя игрового объекта 
+	--(имя персонажа: ma, mp, mw, wa, wp, ww)
+	--и далее используем это имя для вызова анимаций.
+	local go_name 		= string.sub(tostring(msg.url().path), 9, 10)
+	SPRITE_NAME 		= "#" .. go_name .. "_sprite"
+	ATTACK_ANIM_NAME 	= go_name:upper() .. "_ATTACK"
+	DIE_ANIM_NAME 		= go_name:upper() .. "_DIE"
+	HURT_ANIM_NAME 		= go_name:upper() .. "_HURT"
+	IDLE_ANIM_NAME 		= go_name:upper() .. "_IDLE"
+	RUN_ANIM_NAME 		= go_name:upper() .. "_RUN"
+	print(RUN_ANIM_NAME)
+	--ВАЖНО! 
+	--Названия спрайтов и анимаций спрайтов не изменять! 
+		
 	local p = go.get_position()
 	self.dest_p_x = p.x
 	self.dest_p_y = p.y
@@ -10,9 +31,7 @@ function init(self)
 	msg.post("#circle_sprite", "disable")
 
 	self.is_moving = false
-	sprite.play_flipbook("#wa_sprite", "WA_IDLE")
-	--Этот код полезен для доступа из других игровых объектов
-	--msg.post("#wa_sprite", "play_animation", { id = hash("WA_IDLE") })	
+	sprite.play_flipbook(SPRITE_NAME, IDLE_ANIM_NAME)
 	msg.post(".", "acquire_input_focus")
 end
 
@@ -38,7 +57,7 @@ function on_input(self, action_id, action)
 			self.dest_p_x = CELL_SIZE / 2 + dtx * 100
 			self.dest_p_y = CELL_SIZE / 2 + dty * 100
 			self.is_moving = true
-			sprite.play_flipbook("#wa_sprite", "WA_RUN")
+			sprite.play_flipbook(SPRITE_NAME, RUN_ANIM_NAME)
 		end
 	
 		self.is_selected = false
@@ -67,7 +86,7 @@ function update(self, dt)
 			else
 				p.y = self.dest_p_y
 				self.is_moving = false
-				sprite.play_flipbook("#wa_sprite", "WA_IDLE")
+				sprite.play_flipbook(SPRITE_NAME, IDLE_ANIM_NAME)
 				end
 		end
 	end
