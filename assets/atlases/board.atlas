@@ -1,0 +1,7 @@
+images {
+  image: "/assets/images/board/cell.png"
+}
+images {
+  image: "/assets/images/board/circle.png"
+}
+extrude_borders: 2

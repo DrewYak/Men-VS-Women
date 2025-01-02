@@ -11,7 +11,7 @@ function init(self)
 
 	self.is_moving = false
 	sprite.play_flipbook("#wa_sprite", "WA_IDLE")
-	--Этот код нуполезен для доступа из других игровых объектов
+	--Этот код полезен для доступа из других игровых объектов
 	--msg.post("#wa_sprite", "play_animation", { id = hash("WA_IDLE") })	
 	msg.post(".", "acquire_input_focus")
 end

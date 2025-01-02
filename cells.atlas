@@ -1,7 +1,0 @@
-images {
-  image: "/assets/cell.png"
-}
-images {
-  image: "/assets/units/circle.png"
-}
-extrude_borders: 2
