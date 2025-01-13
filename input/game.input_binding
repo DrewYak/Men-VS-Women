@@ -1,3 +1,7 @@
+key_trigger {
+  input: KEY_LALT
+  action: "show_damage"
+}
 mouse_trigger {
   input: MOUSE_BUTTON_LEFT
   action: "select_character"
