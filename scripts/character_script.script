@@ -94,6 +94,8 @@ function init(self)
 	pprint(go.get_position())
 
 	self.is_showing_damage = false
+
+	self.damage_labels = {}
 end
 
 function on_input(self, action_id, action)
@@ -176,9 +178,43 @@ end
 -- ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ
 function show_damage_field(self)
 	print("show_damage_field")
+
+	local character_x = go.get_position().x
+	local character_y = go.get_position().y 
+	
+	for row = 1, #self.damage_field do
+		for col = 1, #self.damage_field[row] do
+			local damage = self.damage_field[row][col]
+			if damage > 0 then
+				-- Вычисляем смещения для координат
+				local offset_x = (col - 3) * CELL_SIZE
+				local offset_y = (row - 3) * CELL_SIZE
+
+				-- Вычисляем координаты для отображения урона
+				local x = character_x + offset_x
+				local y = character_y + offset_y
+
+				-- Проверяем, оказались ли координаты
+				-- за пределами игровой доски
+				local cell_x = math.floor(x / CELL_SIZE) + 1
+				local cell_y = math.floor(y / CELL_SIZE) + 1
+				if cell_x >= 1 and cell_x <= BOARD_SIZE and cell_y >= 1 and cell_y <= BOARD_SIZE then
+					local label_id = factory.create("#label_factory", vmath.vector3(x, y, 0))								
+					label.set_text(label_id, tostring(damage))
+					table.insert(self.damage_labels, label_id)
+				end
+			end
+		end
+	end
 end
 
 function hide_damage_field(self)
 	print("hide_damage_field")
+
+	for _, label_id in ipairs(self.damage_labels) do
+		go.delete(label_id)
+	end
+
+	self.damage_labels = {}
 end
 
